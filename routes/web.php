@@ -44,7 +44,7 @@ Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm'
 Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')
     ->name('password.email');
 //重置密码页面
-Route::get('password/reset/{token}', 'Auth\ForgotPasswordController@showResetForm')
+Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')
     ->name('password.reset');
 //重置密码
 Route::post('password/reset', 'Auth\ResetPasswordController@reset')
