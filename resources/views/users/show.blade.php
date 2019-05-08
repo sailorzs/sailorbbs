@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-3 col-md-3 hidden-sm hidden-xs user-info">
           <div class="card">
-            <img src="https://iocaffcdn.phphub.org/uploads/images/201709/20/1/PtDKbASVcz.png?imageView2/1/w/600/h/600"
+            <img src="{{ $user->avatar }}"
                  class="card-img-top" alt="{{ $user->name }}">
 
             <div class="card-body">
@@ -33,16 +33,6 @@
               暂无数据～
             </div>
           </div>
-
-
-
-
         </div>
-
-
-
-
-
-
     </div>
 @stop
