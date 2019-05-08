@@ -63,3 +63,8 @@ Route::get('email/verify/{id}', 'Auth\VerificationController@verify')
 Route::get('email/resend', 'Auth\VerificationController@resend')
     ->name('verification.resend');
 
+
+//User 资源路由
+
+Route::resource('users', 'UsersController', ['only'=>['edit', 'update', 'show']]);
+
