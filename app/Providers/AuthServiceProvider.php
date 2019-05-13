@@ -15,7 +15,7 @@ class AuthServiceProvider extends ServiceProvider
     protected $policies = [
 		 \App\Models\Topic::class => \App\Policies\TopicPolicy::class,
         'App\Model' => 'App\Policies\ModelPolicy',
-        'App\Model\User' => 'App\Policies\UserPolicy'
+        'App\Models\User' => 'App\Policies\UserPolicy'
 
     ];
 
