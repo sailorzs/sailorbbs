@@ -10,6 +10,8 @@
   <title>@yield('title', 'sailorbbs') - 转型之路</title>
 
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+  
+  @yield('styles')
 
 
 </head>
@@ -30,6 +32,8 @@
 
 
   <script src="{{ mix('js/app.js') }}"></script>
+  
+  @yield('scripts')
 
 
 
