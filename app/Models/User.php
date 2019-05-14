@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Topic;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Auth\MustVerifyEmail as MustVerifyEmailTrait;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -37,4 +38,8 @@ class User extends Authenticatable implements MustVerifyEmailContract
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function topics(){
+        return $this->hasMany(Topic::class);
+    }
 }
