@@ -9,6 +9,8 @@
 
   <title>@yield('title', 'sailorbbs') - 转型之路</title>
 
+  <meta name="description" content="@yield('description', 'sailorbbs 转型必胜！')" />
+
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
   
   @yield('styles')
