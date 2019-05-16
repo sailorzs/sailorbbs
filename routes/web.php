@@ -69,7 +69,9 @@ Route::get('email/resend', 'Auth\VerificationController@resend')
 Route::resource('users', 'UsersController', ['only'=>['edit', 'update', 'show']]);
 
 //Topic 资源路由
-Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+Route::resource('topics', 'TopicsController', ['only' => ['index', 'create', 'store', 'update', 'edit', 'destroy']]);
+
+Route::get('topics/{topic}/{slug?}', 'TopicsController@show')->name('topics.show');
 
 //Category 资源路由
 Route::resource('categories', 'CategoriesController', ['only' => ['show']]);
