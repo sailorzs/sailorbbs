@@ -44,7 +44,6 @@ class UsersTableSeeder extends Seeder
         $user->avatar = 'https://iocaffcdn.phphub.org/uploads/images/201710/14/1/ZqM7iaP4CR.png';
         $user->save();
 
-
         // 初始化用户角色，将 1 号用户指派为『站长』
         $user->assignRole('Founder');
 
