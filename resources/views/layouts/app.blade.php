@@ -7,9 +7,11 @@
 
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>@yield('title', 'sailorbbs') - 转型之路</title>
+  <title>@yield('title', 'sailorbbs') - {{ setting('site_name', '转型之路') }}</title>
 
-  <meta name="description" content="@yield('description', 'sailorbbs 转型必胜！')" />
+  <meta name="description" content="@yield('description', setting('seo_description', '转型必胜！'))" />
+
+  <meta name="keyword" content="@yield('keyword', setting('seo_keyword', 'sailorbbs 不破不立！'))" />
 
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
   
