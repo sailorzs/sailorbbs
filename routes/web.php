@@ -12,7 +12,7 @@
 */
 
 //主页路由
-Route::get('/', 'PagesController@root')
+Route::get('/', 'TopicsController@index')
     ->name('root');
 
 Route::get('permission-denied', 'PagesController@permissionDenied')->name('permission-denied');
